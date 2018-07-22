@@ -1,86 +1,274 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles\style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Walter+Turncoat" rel="stylesheet">
-    <title>flippin' Math</title>
-  </head>
+<title>flippin' math</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Eczar|Walter+Turncoat|Gaegu" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
 
-  <body id="bodyHome">
-    <section class="container-fluid">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#resources" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RESOURCES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#teachers" class="w3-bar-item w3-button" onclick="toggleFunction()">TEACHERS</a>
+    <a href="#students" class="w3-bar-item w3-button" onclick="toggleFunction()">STUDENTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- Header Parallax Image with Logo Text -->
+<div class="bgimg-head w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">flippin' math</span>
+  </div>
+</div>
+
+<div class="text-smallfancy w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Teachers</span><br>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Students</span><br>
+
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Video Library</span><br>
+
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">e-Tutoring</span><br>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Portfolio Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">MISSION</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">WHY FLIPPIN' MATH?</h3>
+  <p class="w3-center"><em>...because math shouldn't be so flippin' hard.</em></p>
+  <p>Math education is a beast. For everyone involved! </br></br>
+      If you are an educator, or are friends with one, you know it's true. We teachers really have 3 full-time jobs. There's the obvious class-time, when we inspire and connect with kids. But that's just one piece.
+      Before class, we've spent hours finding, creating, and curating the assignments. After class, we reflectand analyze the assessments we've given. We grade papers, we think of things to do to help the ones who just don't get it, or are bored to tears.</br>
+    </br>And you students, bless you. Our educational system needs a make-over. The ship is being steered into uncharted global opportunities. Teachers are learning along with you what the job market of tomorrow will require. And if we can't somehow make it mean something to you,
+    math just piles on top of another irrelevant assignments needed to scrape by.</br></br>
+    Really. It's almost too much sometimes. </br></br>
+      It's my goal to make life easier for everyone involved in the education process. This website is meant to be a resource for teachers and students alike. Over the coming weeks, I intend to upload and organize a multitude of standards-aligned resource. I want to direct traffic to sites that do a good
+      job of sorting the ideas, making sense of them together. Most importantly, I hope to build collaboration and conversation among those of us on the frontlines. "Teamwork makes the dream work", as they say.</p>
+  <div class="w3-row" style="display:inline-block">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fas fa-chess-queen"></i>Work in Progress</b></p><br>
+      <img src="Images\underConstruction.PNG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="compass" width="500" height="333">
+      <p>We gotta start somewhere. This site is under construction to build the foundation. After that, my goal is to slowly add and adapt, research and connect. Visit often, see what's developing!
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Hi. I'm Tammy Reeves. I'm a mom, and a nerd. I'm a high school math teacher, and have been since 2014. Before that, I've taught elementary Math Specials, K-8 music.... I even taught community classes at the health food store where I worked for 8 years before joining the public school system.</br></br>
+    I believe in the power of student exploration and curiosity. My vision for this site is ambitious. In time, the video library will be full of student submissions, I'll begin offering 6-week 'bootcamps' for high school math topics and an interactive forum for discussion and collaboration.</p>
+    <img src="Images\facepic2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="compass" width="500" height="333">
+
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">I'm really interested in:</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Computer programming</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fas fa-music"></i>Music & Singing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fas fa-chess-board"></i>Cross-stitch</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
 
 
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div id="resources" class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">RESOURCES</span>
+  </div>
+</div>
 
-<div class="navbar-wrapper">
-  <div class="container-fluid">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header navbar-left">
-            <a class="navbar-brand" href="#">flippin' Math</a>
+<!-- Container (Resources Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <div class="w3-row-padding w3-center" style="display: inline-block">
+    <div class="w3-col m6">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    <div class="w3-col m6">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+  </div>
+  <h3 class="w3-center">VIDEO LIBRARY</h3>
+  <p class="w3-center"><em>It begins with links to online tutorial videos, and evolves into a collaborative, ever-growing library for any topic you want to learn. Challenge your students to make their own!<br> Click on the images to make them bigger</em></p><br>
 
-            <button id="menuBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="navLogo" class="navbar-brand navbar-right" href="index.html">
-            </a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-background">
-              <li><a class="navlink active" href="index.html">Home</a></li>
-              <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
-                     <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                       <li><a class="navlink" href="students.html">Student Links</a></li>
-                       <li><a class="navlink" href="teachers.html">Teacher Links</a></li>
-                       <li><a class="navlink" href="vidLibrary.html">Video Library</a></li>
-                     </ul>
-              <li><a class="navlink" href="contact.html">Contact us</a></li>
-              <li><a class="navlink" href="about.html">About us</a></li>
-            </ul>
-          </div>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!--Modal for full size images on click -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min w3-wide">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <div class="w3-round-large" style="width:100%;height:400px;">
+      <img src="Images/facepic.PNG"></img></div>
+    </div>
+
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <h3 class="w3-center">Talk to me.</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Atlanta, GA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (706) 750-8055)<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: reevescommatammy@flippinmath.com<br>
       </div>
-      </nav>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
     </div>
   </div>
+</div>
 
-<header id="headHome">
-  <div class="container-fluid">
-    <img id="headLogo" class="img-responsive" src="Images/logo.PNG">
-    <p class="headText">...'cause Math shouldn't be so flippin' hard.</p>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook-square w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
   </div>
-  </header>
+  <p id="foot">TradeMark Reeves, LLC @2018</p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
 
 
-  <section class="container-fluid">
-    <div class="row">
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
-    <div class="col-xs-6">
-      <img id="constructImg" class="img-responsive" align="center" src="Images\underConstruction.PNG">
-    </div>
-    <div class="col-xs-6">
-        <p>This site is currently under construction. Check back with us soon!</p>
-      </div>\
-</section>
-           <footer width="650">
-        <h6 class="smalltext">flippin'Math.com & flippin'Math.org<address>TradeMark Reeves, LLC</address></h6>
-      </br>
-        <h6 class="smalltext">reevescommatammy@trademarkreeves.com</h6>
-      </footer>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
 
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-  </body>
+</body>
 </html>
